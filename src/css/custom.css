@@ -12,7 +12,7 @@
   color: var(--green-primary);
 }
 
-.bg-color {
+.bgs-color {
   background-color: var(--bg-color);
 }
 
@@ -24,13 +24,48 @@
   color: var(--pholder-color);
 }
 
+.active-link {
+  color: var(--green-primary) !important;
+  font-weight: 700 !important;
+  background-color: var(--grey-light);
+  border-radius: 18px;
+}
+
 body {
+  overflow-x: hidden;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
-.navbar-brand {
-  font-weight: 700;
-  color: var(--green-primary);
+main.bgs-color {
+  position: relative;
+  overflow: hidden;
+}
+
+.page-pattern {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/images/bg-doodle.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.18;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page-pattern.top-right {
+  width: 320px;
+  height: 320px;
+  top: 0;
+  right: 0;
+  transform: translate(18%, -12%) rotate(8deg);
+}
+
+.page-pattern.bottom-left {
+  width: 280px;
+  height: 280px;
+  left: 0;
+  bottom: 0;
+  transform: translate(-14%, 12%) rotate(-10deg);
 }
 
 /* Image styling */
@@ -89,8 +124,58 @@ img {
 
 .inter-extra {
   font-family: "Inter", sans-serif;
-  font-weight: 800; /* 'Extra' usually refers to Extra Bold */
+  font-weight: 800;
 }
 
 
 /* Add your layout-specific overrides below */
+.hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 4rem 1rem;
+}
+
+.hero .display-5 {
+  color: var(--green-primary);
+}
+
+.doodle {
+  position: absolute;
+  background-image: url("../assets/images/bg-doodle.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.doodle-1 {
+  width: 380px;
+  height: 380px;
+  top: -40px;
+  left: -40px;
+  transform: rotate(-8deg);
+}
+
+.doodle-2 {
+  width: 420px;
+  height: 420px;
+  right: -60px;
+  bottom: -40px;
+  transform: rotate(18deg);
+}
+
+/* Responsiveness: hide doodles on small screens */
+@media (max-width: 768px) {
+  .doodle { display: none; }
+  .hero { min-height: 48vh; }
+}
+
