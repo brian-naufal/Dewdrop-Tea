@@ -8,13 +8,29 @@
   --pholder-color: #A8AEB9;
 }
 
+.green-primary {
+  color: var(--green-primary);
+}
+
+.bg-color {
+  background-color: var(--bg-color);
+}
+
+.grey-light {
+  background-color: var(--grey-light);
+}
+
+.pholder-color {
+  color: var(--pholder-color);
+}
+
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
 .navbar-brand {
   font-weight: 700;
-  color: var(--brand-color);
+  color: var(--green-primary);
 }
 
 /* Image styling */
@@ -28,5 +44,53 @@ img {
   object-fit: cover;
   height: 200px; /* adjust as needed */
 }
+
+/* --- Font Weight Utility Classes --- */
+
+/* --- Playfair Display (Serif) --- */
+.playfair-regular {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+.playfair-bold {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+/* --- Merriweather (Serif) --- */
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+}
+
+.merriweather-semi {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+}
+
+/* --- Noto Sans (Sans-Serif) --- */
+.noto-sans-bold {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+/* --- Open Sans (Sans-Serif) --- */
+.open-sans-semi {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+/* --- Inter (Sans-Serif) --- */
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.inter-extra {
+  font-family: "Inter", sans-serif;
+  font-weight: 800; /* 'Extra' usually refers to Extra Bold */
+}
+
 
 /* Add your layout-specific overrides below */
