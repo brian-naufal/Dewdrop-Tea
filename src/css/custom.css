@@ -1,0 +1,32 @@
+/* Your custom styles go here. This file overrides Bootstrap defaults.
+   DON'T edit files under node_modules (Bootstrap source). */
+
+:root {
+  --green-primary: #14532D; /* example color, replace with your design */
+  --bg-color: #F6F4E7;
+  --grey-light: #F3F4F6;
+  --pholder-color: #A8AEB9;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--brand-color);
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px; /* adjust as needed */
+}
+
+/* Add your layout-specific overrides below */

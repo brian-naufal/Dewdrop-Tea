@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dewdrop Tea</title>
+    <!-- Bootstrap CSS (from npm) -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom styles -->
+    <link href="src/css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Simple example layout to get you started -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Dewdrop Tea</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <header class="mb-4 text-center">
+        <h1 class="display-5">Welcome to Dewdrop Tea</h1>
+        <p class="lead">Starter layout using Bootstrap — edit the files listed in the documentation.</p>
+      </header>
+
+      <section>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <!-- Example: image in card -->
+              <img src="assets/images/tea-about.jpg" class="card-img-top img-fluid" alt="About Dewdrop Tea">
+              <div class="card-body">
+                <h5 class="card-title">About</h5>
+                <p class="card-text">Replace this with your design content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <!-- Example: image in card -->
+              <img src="assets/images/tea-specials.jpg" class="card-img-top img-fluid" alt="Our Specials">
+              <div class="card-body">
+                <h5 class="card-title">Specials</h5>
+                <p class="card-text">Showcase specials or features here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center py-4 bg-light">
+      <div class="container">© Dewdrop Tea</div>
+    </footer>
+
+    <!-- Bootstrap JS bundle (includes Popper) -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Your custom JS -->
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
