@@ -139,14 +139,22 @@
 }
 
 @media (max-width: 768px) {
+    .product-card {
+        padding: 12px 10px 10px;
+    }
+    .product-card img, .product-card-img {
+        height: 140px;
+    }
     .product-card h6 {
         font-size: 14px;
+        margin-bottom: 4px;
     }
     .product-price {
         font-size: 12px;
+        margin-bottom: 8px;
     }
-    .star-rating svg {
-        width: 14px;
-        height: 14px;
+    .buy-btn {
+        font-size: 11px;
+        padding: 4px 0;
     }
 }

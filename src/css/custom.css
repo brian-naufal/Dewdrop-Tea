@@ -197,15 +197,14 @@ footer {
     }
 }
 
-/*
-<div class="d-flex flex-column justify-content-start flex-wrap">
-    <div class="star-rating" style="color: #D4AF37; font-size: 20px;">
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-    </div>
-    <p class=""> ... </p>
-</div>
-*/
+/* Star Rating */
+.star-rating {
+    color: #D4AF37 !important;
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    .star-rating {
+        font-size: 14px;
+    }
+}
