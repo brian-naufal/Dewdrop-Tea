@@ -1,0 +1,100 @@
+/* Hero Banner */
+.hero-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../assets/images/oolong.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 250px;
+    }
+}
+
+.hero-banner h1 {
+    font-size: 5rem;
+}
+
+@media (max-width: 768px) {
+    .hero-banner h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.hero-subtitle {
+    font-size: 2.25rem;
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+.hero-btn {
+    width: fit-content;
+}
+
+@media (max-width: 768px) {
+    .hero-btn {
+        font-size: 1.1rem !important;
+        padding: 0.5rem 2rem !important;
+    }
+}
+
+/* Best Seller */
+.best-seller-img {
+    height: 215px;
+    transition: transform 0.3s ease;
+}
+
+.best-seller-img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .best-seller-img {
+        height: 180px;
+    }
+}
+
+/* Reviews */
+.review-card {
+    border: 1px solid var(--green-primary);
+    border-radius: 18px;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.review-pfp {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+}
+
+.star-rating svg {
+    width: 20px;
+    height: 20px;
+    color: #D4AF37; /* Gold */
+}
+
+.review-text {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Best seller */
+.best-seller-row::-webkit-scrollbar {
+    display: none;
+}
+.best-seller-row {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

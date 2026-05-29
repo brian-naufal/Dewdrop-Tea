@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dewdrop Tea - Promo</title>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/src/css/custom.css">
+    <link rel="stylesheet" href="/src/css/promo.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="promo-wrapper">
+        <div class="promo-outer-container">
+            <!-- Mobile category dropdown toggle -->
+            <div class="promo-mobile-toggle d-md-none text-center mb-3">
+                <button class="btn promo-toggle-btn inter-medium text-green-primary" type="button" data-bs-toggle="collapse" data-bs-target="#promoCategoriesMobile" aria-expanded="false" aria-controls="promoCategoriesMobile">
+                    Promo <span class="promo-toggle-arrow">&#9660;</span>
+                </button>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row">
+                <!-- Left panel: Categories (Desktop) -->
+                <div class="promo-sidebar bg-green-primary text-white d-none d-md-flex flex-column align-items-center">
+                    <h2 class="promo-label inter-bold">PROMO:</h2>
+
+                    <hr class="promo-divider">
+                    <a href="#" class="promo-cat-link merriweather-semi text-white hover-scale d-block">Bundling & Packages</a>
+
+                    <hr class="promo-divider">
+                    <a href="#" class="promo-cat-link merriweather-semi text-white hover-scale d-block">Seasonal Sales</a>
+
+                    <hr class="promo-divider">
+                    <a href="#" class="promo-cat-link text-white hover-scale d-block">
+                        <span class="inter-regular">Member </span><span class="merriweather-semi">Exclusives</span>
+                    </a>
+
+                    <hr class="promo-divider">
+                    <a href="#" class="promo-cat-link merriweather-semi text-white hover-scale d-block">Welcome Offers</a>
+
+                    <hr class="promo-divider">
+                    <a href="#" class="promo-cat-link merriweather-semi text-white hover-scale d-block">Free Shipping</a>
+                </div>
+
+                <!-- Mobile categories collapse -->
+                <div class="collapse d-md-none" id="promoCategoriesMobile">
+                    <div class="promo-sidebar-mobile bg-green-primary text-white d-flex flex-column align-items-center mx-auto mb-3">
+                        <h2 class="promo-label inter-bold">PROMO:</h2>
+
+                        <hr class="promo-divider">
+                        <a href="#" class="promo-cat-link merriweather-semi text-white hover-scale d-block">Bundling & Packages</a>
+
+                        <hr class="promo-divider">
+                        <a href="#" class="promo-cat-link merriweather-semi text-white hover-scale d-block">Seasonal Sales</a>
+
+                        <hr class="promo-divider">
+                        <a href="#" class="promo-cat-link text-white hover-scale d-block">
+                            <span class="inter-regular">Member </span><span class="merriweather-semi">Exclusives</span>
+                        </a>
+
+                        <hr class="promo-divider">
+                        <a href="#" class="promo-cat-link merriweather-semi text-white hover-scale d-block">Welcome Offers</a>
+
+                        <hr class="promo-divider">
+                        <a href="#" class="promo-cat-link merriweather-semi text-white hover-scale d-block">Free Shipping</a>
+                    </div>
+                </div>
+
+                <!-- Right panel: Hero Product -->
+                <div class="promo-hero-panel d-flex flex-column">
+                    <!-- Hero image area -->
+                    <div class="promo-hero-image d-flex flex-column align-items-center justify-content-end">
+                        <h2 class="promo-hero-title playfair-bold text-white text-center">Premium Keemun Black Tea</h2>
+                        <a href="/pages/product.html" class="btn btn-light rounded-pill promo-buy-btn hover-scale noto-sans-bold shadow">
+                            Buy Now
+                        </a>
+                    </div>
+
+                    <!-- Product info section -->
+                    <div class="promo-info-panel">
+                        <h3 class="promo-info-title merriweather-bold text-green-primary">Keemun Black Tea</h3>
+                        <p class="promo-info-desc noto-sans-regular mb-0">
+                            Known as the 'Burgundy of Teas', this premium whole-leaf black tea offers a remarkably smooth and rich flavor with a delicate smoky finish.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/js/main.js"></script>
+</body>
+</html>

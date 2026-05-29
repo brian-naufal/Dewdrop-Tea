@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dewdrop Tea - Shop</title>
+    <!-- Bootstrap CSS -->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/src/css/custom.css">
+    <link rel="stylesheet" href="/src/css/shop.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="container-fluid px-4 px-md-5 mt-4">
+        <!-- Hero Section (Reused from home) -->
+        <section class="hero-banner rounded-4 mb-5 p-4 p-md-5 d-flex flex-column justify-content-center">
+            <h1 class="playfair-bold text-white mb-3">OOLONG TEA</h1>
+            <p class="inter-regular text-white mb-4 hero-subtitle">Experience the authentic taste of premium whole-leaf tea.</p>
+            <a href="/pages/product.html" class="btn btn-light rounded-pill px-5 py-3 hover-scale text-green-primary noto-sans-bold fs-4 hero-btn">
+                Buy Now
+            </a>
+        </section>
+
+        <div class="row gx-5 mb-5">
+            <!-- Sidebar Filter -->
+            <aside class="col-lg-3 mb-4 mb-lg-0">
+                <div class="filter-sidebar p-4 rounded-4">
+                    <h3 class="playfair-regular text-green-primary mb-4 d-flex align-items-center gap-2">
+                        <i class="bi bi-sliders" style="font-size: 24px;"></i>
+                        Filter
+                    </h3>
+                    
+                    <!-- Type Filter -->
+                    <div class="mb-4">
+                        <h5 class="open-sans-semi mb-3 d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#typeCollapse" role="button">
+                            Type <i class="bi bi-chevron-down" style="font-size: 16px;"></i>
+                        </h5>
+                        <div class="collapse show" id="typeCollapse">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="typeBlack">
+                                <label class="form-check-label open-sans-semi" for="typeBlack">Black Tea (10)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="typeGreen" checked>
+                                <label class="form-check-label open-sans-semi" for="typeGreen">Green Tea (8)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="typeWhite">
+                                <label class="form-check-label open-sans-semi" for="typeWhite">White Tea (5)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="typeOolong" checked>
+                                <label class="form-check-label open-sans-semi" for="typeOolong">Oolong Tea (4)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="typeMatcha">
+                                <label class="form-check-label open-sans-semi" for="typeMatcha">Matcha (6)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="typeHerbal">
+                                <label class="form-check-label open-sans-semi" for="typeHerbal">Herbal Tea (9)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="typeBlends">
+                                <label class="form-check-label open-sans-semi" for="typeBlends">Blends (15)</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <!-- Other Filters Placholders (Size, Price, Benefit) -->
+                    <div class="mb-4">
+                        <h5 class="open-sans-semi mb-3 d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sizeCollapse" role="button">
+                            Size <span style="font-size: 16px;">&#9660;</span>
+                        </h5>
+                        <div class="collapse" id="sizeCollapse">
+                            <!-- Options would go here -->
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div class="mb-4">
+                        <h5 class="open-sans-semi mb-3 d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#priceCollapse" role="button">
+                            Price <span style="font-size: 16px;">&#9660;</span>
+                        </h5>
+                        <div class="collapse" id="priceCollapse">
+                             <!-- Options would go here -->
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div class="mb-4">
+                        <h5 class="open-sans-semi mb-3 d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#benefitCollapse" role="button">
+                            Benefit <span style="font-size: 16px;">&#9660;</span>
+                        </h5>
+                        <div class="collapse" id="benefitCollapse">
+                             <!-- Options would go here -->
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Product Grid -->
+            <div class="col-lg-9">
+                <div class="row g-4 product-grid-row">
+                    <!-- Product 1 -->
+                    <div class="col-6 col-md-4">
+                        <div class="product-card hover-lift">
+                            <a href="/pages/product.html">
+                                <img src="/assets/images/oolong-green.webp" class="img-fluid" alt="Oolong Tea">
+                            </a>
+                            <div class="p-3">
+                                <div class="d-flex align-items-center gap-1 mb-2">
+                                    <div class="star-rating" style="color: #D4AF37; font-size: 23px;">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <span class="inter-regular rating-text">(4.9)</span>
+                                </div>
+                                <h6 class="inter-extra text-green-primary">OOLONG TEA</h6>
+                                <p class="inter-medium product-price">Rp. 185.000</p>
+                                <a href="/pages/product.html" class="btn btn-light rounded-pill w-100 hover-scale text-green-primary noto-sans-bold buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="col-6 col-md-4">
+                        <div class="product-card hover-lift">
+                            <a href="/pages/product.html">
+                                <img src="/assets/images/green-teas.webp" class="img-fluid" alt="Green Tea">
+                            </a>
+                            <div class="p-3">
+                                <div class="d-flex align-items-center gap-1 mb-2">
+                                    <div class="star-rating" style="color: #D4AF37; font-size: 23px;">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <span class="inter-regular rating-text">(4.9)</span>
+                                </div>
+                                <h6 class="inter-extra text-green-primary">GREEN TEA</h6>
+                                <p class="inter-medium product-price">Rp. 185.000</p>
+                                <a href="/pages/product.html" class="btn btn-light rounded-pill w-100 hover-scale text-green-primary noto-sans-bold buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col-6 col-md-4">
+                        <div class="product-card hover-lift">
+                            <a href="/pages/product.html">
+                                <img src="/assets/images/jasmine.webp" class="img-fluid" alt="Jasmine Green Tea">
+                            </a>
+                            <div class="p-3">
+                                <div class="d-flex align-items-center gap-1 mb-2">
+                                    <div class="star-rating" style="color: #D4AF37; font-size: 23px;">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <span class="inter-regular rating-text">(4.9)</span>
+                                </div>
+                                <h6 class="inter-extra text-green-primary">JASMINE GREEN TEA</h6>
+                                <p class="inter-medium product-price">Rp. 185.000</p>
+                                <a href="/pages/product.html" class="btn btn-light rounded-pill w-100 hover-scale text-green-primary noto-sans-bold buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="col-6 col-md-4">
+                        <div class="product-card hover-lift">
+                            <a href="/pages/product.html">
+                                <img src="/assets/images/powder.webp" class="img-fluid" alt="Gunpowder Green Tea">
+                            </a>
+                            <div class="p-3">
+                                <div class="d-flex align-items-center gap-1 mb-2">
+                                    <div class="star-rating" style="color: #D4AF37; font-size: 23px;">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <span class="inter-regular rating-text">(4.9)</span>
+                                </div>
+                                <h6 class="inter-extra text-green-primary">GUNPOWDER GREEN TEA</h6>
+                                <p class="inter-medium product-price">Rp. 150.000</p>
+                                <a href="/pages/product.html" class="btn btn-light rounded-pill w-100 hover-scale text-green-primary noto-sans-bold buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 -->
+                    <div class="col-6 col-md-4">
+                        <div class="product-card hover-lift">
+                            <a href="/pages/product.html">
+                                <img src="/assets/images/matcha.webp" class="img-fluid" alt="Matcha Powder">
+                            </a>
+                            <div class="p-3">
+                                <div class="d-flex align-items-center gap-1 mb-2">
+                                    <div class="star-rating" style="color: #D4AF37; font-size: 23px;">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <span class="inter-regular rating-text">(4.9)</span>
+                                </div>
+                                <h6 class="inter-extra text-green-primary">MATCHA POWDER</h6>
+                                <p class="inter-medium product-price">Rp. 100.000</p>
+                                <a href="/pages/product.html" class="btn btn-light rounded-pill w-100 hover-scale text-green-primary noto-sans-bold buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 6 -->
+                    <div class="col-6 col-md-4">
+                        <div class="product-card hover-lift">
+                            <a href="/pages/product.html">
+                                <img src="/assets/images/rooibos.webp" class="img-fluid" alt="Rooibos Tea">
+                            </a>
+                            <div class="p-3">
+                                <div class="d-flex align-items-center gap-1 mb-2">
+                                    <div class="star-rating" style="color: #D4AF37; font-size: 23px;">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <span class="inter-regular rating-text">(4.9)</span>
+                                </div>
+                                <h6 class="inter-extra text-green-primary">ROOIBOS TEA</h6>
+                                <p class="inter-medium product-price">Rp. 185.000</p>
+                                <a href="/pages/product.html" class="btn btn-light rounded-pill w-100 hover-scale text-green-primary noto-sans-bold buy-btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/js/main.js"></script>
+</body>
+</html>

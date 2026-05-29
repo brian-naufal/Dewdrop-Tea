@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dewdrop Tea - Product Detail</title>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/src/css/custom.css">
+    <link rel="stylesheet" href="/src/css/product.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <main class="m-0">
+        <section class="container-fluid px-4 px-md-5 mt-4 overflow-visible">
+            <!-- Breadcrumbs -->
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb noto-sans-regular" style="font-size: 12px;">
+                    <li class="breadcrumb-item"><a href="/index.html" class="text-green-primary">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/pages/shop.html" class="text-green-primary">All Product</a></li>
+                    <li class="breadcrumb-item active text-green-primary" aria-current="page">Green Tea</li>
+                </ol>
+            </nav>
+
+            <!-- Product Detail Row -->
+            <div class="row gx-5 mb-5 align-items-start">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="/assets/images/green-tea.webp" class="img-fluid rounded-4 shadow w-100" alt="Green Tea">
+                </div>
+                
+                <div class="col-md-7">
+                    <h1 class="merriweather-bold text-green-primary mb-3">Green Tea</h1>
+                    
+                    <h4 class="noto-sans-regular mb-4" style="font-size: 14px;">Strong & Energizing</h4>
+                    
+                    <p class="noto-sans-regular mb-4" style="line-height: 1.8;">
+                        This tea is known for its strong, robust flavor and its refreshing, invigorating aroma. It is a popular choice for those who enjoy a bold, full-bodied tea experience. Gunpowder Green tea is also believed to have a number of health benefits including aiding in digestion and boosting the immune system. Try it hot or iced for a tasty and healthy beverage choice.
+                    </p>
+
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <button class="bg-green-primary text-white rounded-0 px-4 py-2 hover-scale noto-sans-bold" style="border: 1px solid var(--green-primary); font-size: 14px; box-shadow: 0 4px 4px rgba(0,0,0,0.25);">
+                            Loose leaf tea
+                        </button>
+                        <button class="btn btn-outline-dark border-0 rounded-0 px-4 py-2 hover-scale noto-sans-regular" style="font-size: 14px;">
+                            Tea bags
+                        </button>
+                    </div>
+                    
+                    <hr class="border-dark my-4">
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="noto-sans-bold me-5" style="font-size: 16px;">Quantity</div>
+                        <div class="d-flex align-items-center fw-bold fs-5">
+                            <button class="btn btn-link text-dark text-decoration-none px-3" onclick="updateQty(-1)">-</button>
+                            <span id="qty" class="mx-3">1</span>
+                            <button class="btn btn-link text-dark text-decoration-none px-3" onclick="updateQty(1)">+</button>
+                        </div>
+                    </div>
+
+                    <hr class="border-dark my-4">
+                    
+                    <div class="d-flex align-items-center gap-4 mt-4">
+                        <a href="/pages/checkout.html" class="bg-green-primary text-white py-3 px-5 hover-scale noto-sans-bold rounded-0" style="font-size: 14px; border: 1px solid var(--green-primary); box-shadow: 0 4px 4px rgba(0,0,0,0.25);">
+                            Add to Cart
+                        </a>
+                        <div class="noto-sans-bold" style="font-size: 20px;">Rp. 185.000</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+            <!-- Shop Similar Section -->
+        <section class="d-flex flex-column pt-4 align-items-center bg-white m-0">
+            <h3 class="text-center w-100 merriweather-bold text-green-primary mb-4 fs-1">Shop similar</h3>
+                
+            <div class="d-flex align-items-center justify-content-center gap-5 mb-4 p-3">
+                <!-- Product 1 -->
+                <div class="d-flex flex-column product-card hover-lift p-3 gap-2">
+                    <img src="../assets/images/matcha.webp" alt="Matcha Powder" class="product-card-img">
+                    
+                    <div class="d-flex align-items-baseline gap-2 justify-content-center flex-wrap">
+                        <div class="star-rating" style="color: #D4AF37; font-size: 20px;">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <span class="inter-regular rating-text">(4.9)</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <h4 class="inter-extra text-green-primary">MATCHA POWDER</h4>
+                        <p class="inter-medium fs-6 product-price">Rp. 100.000</p>
+                        <a href="/pages/product.html" class="btn btn-light rounded-pill w-100 hover-scale text-green-primary noto-sans-bold buy-btn">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="d-flex flex-column product-card hover-lift p-3 gap-2">
+                    <img src="../assets/images/powder.webp" alt="Gunpowder Tea" class="product-card-img">
+                    
+                    <div class="d-flex align-items-baseline gap-2 justify-content-center flex-wrap">
+                        <div class="star-rating" style="color: #D4AF37; font-size: 20px;">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <span class="inter-regular rating-text">(4.9)</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <h4 class="inter-extra text-green-primary">GUNPOWDER TEA</h4>
+                        <p class="inter-medium fs-6 product-price">Rp. 185.000</p>
+                        <a href="/pages/product.html" class="btn btn-light rounded-pill w-100 hover-scale text-green-primary noto-sans-bold buy-btn">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="d-flex flex-column product-card hover-lift p-3 gap-2">
+                    <img src="../assets/images/jasmine.webp" alt="Jasmine Green Tea" class="product-card-img">
+                    
+                    <div class="d-flex align-items-baseline gap-2 justify-content-center flex-wrap">
+                        <div class="star-rating" style="color: #D4AF37; font-size: 20px;">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <span class="inter-regular rating-text">(4.9)</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <h4 class="inter-extra text-green-primary">JASMINE GREEN TEA</h4>
+                        <p class="inter-medium fs-6 product-price">Rp. 185.000</p>
+                        <a href="/pages/product.html" class="btn btn-light rounded-pill w-100 hover-scale text-green-primary noto-sans-bold buy-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/js/main.js"></script>
+    <script>
+        function updateQty(change) {
+            const qtyElement = document.getElementById('qty');
+            let currentQty = parseInt(qtyElement.innerText);
+            currentQty += change;
+            if (currentQty < 1) currentQty = 1;
+            qtyElement.innerText = currentQty;
+        }
+    </script>
+</body>
+</html>

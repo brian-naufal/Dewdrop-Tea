@@ -1,0 +1,16 @@
+/* Custom styles for checkout */
+.form-check-input:checked {
+    background-color: var(--green-primary);
+    border-color: var(--green-primary);
+}
+
+.checkout-form .form-control:focus {
+    border-color: var(--green-primary);
+    box-shadow: none;
+}
+
+@media (min-width: 768px) {
+    .border-start-md {
+        border-left: 1px solid var(--green-primary);
+    }
+}

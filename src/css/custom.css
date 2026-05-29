@@ -1,181 +1,211 @@
-/* Your custom styles go here. This file overrides Bootstrap defaults.
-   DON'T edit files under node_modules (Bootstrap source). */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Merriweather:wght@400;600;700&family=Noto+Sans:wght@400;500;700&family=Open+Sans:wght@600&family=Playfair+Display:wght@400;700&display=swap');
 
 :root {
-  --green-primary: #14532D; /* example color, replace with your design */
+  --green-primary: #14532D;
   --bg-color: #F6F4E7;
   --grey-light: #F3F4F6;
   --pholder-color: #A8AEB9;
-}
-
-.green-primary {
-  color: var(--green-primary);
-}
-
-.bgs-color {
-  background-color: var(--bg-color);
-}
-
-.grey-light {
-  background-color: var(--grey-light);
-}
-
-.pholder-color {
-  color: var(--pholder-color);
-}
-
-.active-link {
-  color: var(--green-primary) !important;
-  font-weight: 700 !important;
-  background-color: var(--grey-light);
-  border-radius: 18px;
+  --brown-primary: #2B2623;
 }
 
 body {
+  background-color: var(--bg-color);
+  color: var(--brown-primary);
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
-main.bgs-color {
-  position: relative;
-  overflow: hidden;
+/* Typography Classes */
+.playfair-regular { font-family: "Playfair Display", serif; font-weight: 400; }
+.playfair-bold { font-family: "Playfair Display", serif; font-weight: 700; }
+.merriweather-regular { font-family: "Merriweather", serif; font-weight: 400; }
+.merriweather-semi { font-family: "Merriweather", serif; font-weight: 600; }
+.merriweather-bold { font-family: "Merriweather", serif; font-weight: 700; }
+.noto-sans-medium { font-family: "Noto Sans", sans-serif; font-weight: 500; }
+.noto-sans-bold { font-family: "Noto Sans", sans-serif; font-weight: 700; }
+.noto-sans-regular { font-family: "Noto Sans", sans-serif; font-weight: 400; }
+.open-sans-semi { font-family: "Open Sans", sans-serif; font-weight: 600; }
+.inter-regular { font-family: "Inter", sans-serif; font-weight: 400; }
+.inter-medium { font-family: "Inter", sans-serif; font-weight: 500; }
+.inter-bold { font-family: "Inter", sans-serif; font-weight: 700; }
+.inter-extra { font-family: "Inter", sans-serif; font-weight: 800; }
+
+.text-green-primary { color: var(--green-primary); }
+.bg-green-primary { background-color: var(--green-primary); }
+
+/* Global components & animation utilities */
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.page-pattern {
-  content: "";
-  position: absolute;
-  background-image: url("../assets/images/bg-doodle.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.18;
-  pointer-events: none;
-  z-index: 0;
+.hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.page-pattern.top-right {
-  width: 320px;
-  height: 320px;
-  top: 0;
-  right: 0;
-  transform: translate(18%, -12%) rotate(8deg);
+.hover-scale:hover {
+    transform: scale(1.03);
 }
 
-.page-pattern.bottom-left {
-  width: 280px;
-  height: 280px;
-  left: 0;
-  bottom: 0;
-  transform: translate(-14%, 12%) rotate(-10deg);
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Image styling */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+.hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15) !important;
 }
 
-.card-img-top {
-  object-fit: cover;
-  height: 200px; /* adjust as needed */
+/* Navbar */
+.custom-navbar {
+    background-color: white;
+    padding: 1.5rem 5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* --- Font Weight Utility Classes --- */
-
-/* --- Playfair Display (Serif) --- */
-.playfair-regular {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-}
-
-.playfair-bold {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-}
-
-/* --- Merriweather (Serif) --- */
-.merriweather-regular {
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-}
-
-.merriweather-semi {
-  font-family: "Merriweather", serif;
-  font-weight: 600;
-}
-
-/* --- Noto Sans (Sans-Serif) --- */
-.noto-sans-bold {
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 700;
-}
-
-/* --- Open Sans (Sans-Serif) --- */
-.open-sans-semi {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-}
-
-/* --- Inter (Sans-Serif) --- */
-.inter-regular {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-}
-
-.inter-extra {
-  font-family: "Inter", sans-serif;
-  font-weight: 800;
-}
-
-
-/* Add your layout-specific overrides below */
-.hero {
-  position: relative;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 4rem 1rem;
-}
-
-.hero .display-5 {
-  color: var(--green-primary);
-}
-
-.doodle {
-  position: absolute;
-  background-image: url("../assets/images/bg-doodle.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.12;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.doodle-1 {
-  width: 380px;
-  height: 380px;
-  top: -40px;
-  left: -40px;
-  transform: rotate(-8deg);
-}
-
-.doodle-2 {
-  width: 420px;
-  height: 420px;
-  right: -60px;
-  bottom: -40px;
-  transform: rotate(18deg);
-}
-
-/* Responsiveness: hide doodles on small screens */
 @media (max-width: 768px) {
-  .doodle { display: none; }
-  .hero { min-height: 48vh; }
+    .custom-navbar {
+        padding: 1rem 1.5rem;
+    }
 }
 
+.navbar-brand {
+    color: var(--green-primary);
+    font-size: 2.6rem;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+.search-bar-container {
+    background-color: var(--grey-light);
+    border-radius: 30px;
+    padding: 0.4rem 1rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 386px;
+}
+
+.search-bar-container input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--brown-primary);
+    width: 100%;
+    margin-left: 0.5rem;
+}
+
+.search-bar-container input::placeholder {
+    color: var(--pholder-color);
+}
+
+.nav-pill {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: #1e1e1e;
+    transition: background-color 0.2s;
+}
+
+.nav-pill:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.nav-pill.active {
+    background-color: var(--grey-light);
+    color: var(--green-primary);
+    font-weight: 700;
+}
+
+.nav-icons img {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.nav-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: var(--green-primary);
+    color: white;
+    padding: 4rem 5rem 2rem 5rem;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 3rem 1.5rem 1.5rem 1.5rem;
+    }
+}
+
+.footer-logo {
+    font-size: 4.9rem; /* ≈78.4px ~ Figma 79px */
+}
+
+.footer-desc {
+    font-size: 1.5rem; /* 24px - Figma */
+    line-height: 1.6;
+}
+
+.footer-contact h4 {
+    font-size: 2.25rem; /* 36px - Figma */
+    margin-bottom: 1.5rem;
+}
+
+.footer-contact p {
+    font-size: 1.5rem; /* 24px - Figma */
+    margin-bottom: 1rem;
+}
+
+.footer-divider {
+    border-top: 1px solid white;
+    margin: 2rem 0 1rem 0;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 1.5rem; /* 24px - Figma */
+}
+
+/* Footer mobile overrides */
+@media (max-width: 768px) {
+    .footer-logo {
+        font-size: 1.5rem; /* 24px - Figma mobile */
+    }
+
+    .footer-desc {
+        font-size: 0.75rem; /* 12px - Figma mobile */
+    }
+
+    .footer-contact h4 {
+        font-size: 1.25rem; /* 20px - Figma mobile */
+    }
+
+    .footer-contact p {
+        font-size: 0.75rem; /* 12px - Figma mobile */
+    }
+
+    .footer-copyright {
+        font-size: 0.75rem; /* 12px - Figma mobile */
+    }
+}
+
+/*
+<div class="d-flex flex-column justify-content-start flex-wrap">
+    <div class="star-rating" style="color: #D4AF37; font-size: 20px;">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+         <i class="bi bi-star-fill"></i>
+    </div>
+    <p class=""> ... </p>
+</div>
+*/

@@ -1,0 +1,160 @@
+/* Promo styles */
+
+/* Outer wrapper for page spacing */
+.promo-wrapper {
+    padding: 1.5rem 2rem 3rem 2rem;
+}
+
+/* Main container: white card with rounded top corners and shadow */
+.promo-outer-container {
+    max-width: 1374px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 38px 38px 0 0;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+/* Left sidebar: green category panel */
+.promo-sidebar {
+    width: 350px;
+    min-width: 350px;
+    padding: 66px 40px 40px 40px;
+    text-align: center;
+}
+
+.promo-label {
+    font-size: 29px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0;
+}
+
+.promo-divider {
+    width: 228px;
+    height: 1px;
+    background-color: white;
+    opacity: 1;
+    margin: 37px auto;
+    border: none;
+}
+
+.promo-cat-link {
+    font-size: 29px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Right panel: hero product */
+.promo-hero-panel {
+    flex: 1;
+    border: 1px solid var(--green-primary);
+    background: white;
+    min-width: 0;
+}
+
+/* Hero image area */
+.promo-hero-image {
+    background-image: url('../../assets/images/keemun.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 3rem 3rem 3rem;
+    padding-top: 493px;
+}
+
+.promo-hero-title {
+    font-size: 67px;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.promo-buy-btn {
+    font-size: 36px;
+    padding: 0.6rem 3rem;
+    color: var(--green-primary);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.62) !important;
+}
+
+/* Product info panel below image */
+.promo-info-panel {
+    max-width: 988px;
+    padding: 13px 30px;
+    min-height: 203px;
+}
+
+.promo-info-title {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.5rem;
+}
+
+.promo-info-desc {
+    font-size: 20px;
+    color: black;
+    line-height: 1.5;
+}
+
+/* Mobile dropdown toggle button */
+.promo-toggle-btn {
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.promo-toggle-arrow {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* Mobile sidebar panel */
+.promo-sidebar-mobile {
+    width: 352px;
+    min-height: 690px;
+    border-radius: 16px;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.promo-sidebar-mobile .promo-cat-link {
+    font-size: 26px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .promo-wrapper {
+        padding: 1rem 0.75rem 2rem 0.75rem;
+    }
+
+    .promo-outer-container {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .promo-hero-image {
+        padding-top: 280px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .promo-hero-title {
+        font-size: 28px;
+    }
+
+    .promo-buy-btn {
+        font-size: 20px;
+        padding: 0.5rem 2rem;
+    }
+
+    .promo-info-panel {
+        padding: 12px 16px;
+        min-height: auto;
+    }
+
+    .promo-info-title {
+        font-size: 18px;
+    }
+
+    .promo-info-desc {
+        font-size: 14px;
+    }
+}
