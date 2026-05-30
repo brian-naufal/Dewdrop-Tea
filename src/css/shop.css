@@ -133,11 +133,6 @@
     border-radius: 45px;
 }
 
-/* Product grid gap */
-.product-grid-row {
-    gap: 52px 0;
-}
-
 @media (max-width: 768px) {
     .product-card {
         padding: 12px 10px 10px;
