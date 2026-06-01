@@ -16,10 +16,11 @@
     }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
     .hero-banner {
         justify-content: center;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left;
     }
 }
 
