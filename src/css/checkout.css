@@ -1,4 +1,3 @@
-/* Custom styles for checkout */
 .form-check-input:checked {
     background-color: var(--green-primary);
     border-color: var(--green-primary);

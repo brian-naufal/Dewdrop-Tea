@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function loadComponents() {
     try {
-        // We use absolute paths to ensure it works from any page level
         const navRes = await fetch('/src/components/navbar.html');
         const navHtml = await navRes.text();
         const navbarContainer = document.getElementById('navbar-container');
@@ -20,12 +19,10 @@ async function loadComponents() {
             footerContainer.innerHTML = footHtml;
         }
 
-        // Add smooth scrolling for contact link
         const contactLink = document.getElementById('nav-contact');
         if (contactLink) {
             contactLink.addEventListener('click', (e) => {
                 const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '';
-                // If it's a hash link on the same page
                 if (contactLink.getAttribute('href') === '#footer' || isHomePage) {
                     const footer = document.getElementById('footer');
                     if (footer) {

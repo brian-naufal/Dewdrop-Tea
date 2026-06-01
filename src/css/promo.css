@@ -1,11 +1,9 @@
 /* Promo styles */
 
-/* Outer wrapper for page spacing */
 .promo-wrapper {
     padding: 1.5rem 2rem 3rem 2rem;
 }
 
-/* Main container: white card with rounded top corners and shadow */
 .promo-outer-container {
     max-width: 1374px;
     margin: 0 auto;
@@ -15,7 +13,7 @@
     overflow: hidden;
 }
 
-/* Left sidebar: green category panel */
+/* Left sidebar: */
 .promo-sidebar {
     width: 350px;
     min-width: 350px;
@@ -43,7 +41,7 @@
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* Right panel: hero product */
+/* Right panel: */
 .promo-hero-panel {
     flex: 1;
     border: 1px solid var(--green-primary);
@@ -74,7 +72,6 @@
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.62) !important;
 }
 
-/* Product info panel below image */
 .promo-info-panel {
     max-width: 988px;
     padding: 13px 30px;
@@ -157,7 +154,7 @@
     }
 
     .promo-buy-btn {
-        display: none; /* Hidden on mobile in the image area, moved to bottom */
+        display: none;
     }
 
     .promo-info-panel {
